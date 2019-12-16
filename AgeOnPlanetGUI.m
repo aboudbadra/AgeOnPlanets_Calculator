@@ -62,11 +62,15 @@ guidata(hObject, handles);
 % uiwait(handles.figure1);
 
 fig = handles.figure1;
+
+% read planet data
 planets = getplanetdata();
+% set time for rotation
 t= linspace(0,150*pi,20000);
+% create a sphere (note: An ellipsoid is a more accurate representation)
 [x,y,z] = sphere;
 
-% Display images of planets
+% Display 3D images of planets
 % ---------------------------------------------------------------%
 % ---------------------------------------------------------------%
 axes(handles.axes1)
@@ -185,9 +189,8 @@ set(HPLUTO,'facecolor','texture',...
 axis equal
 axis off
 
-
-for k = 2:length(t)
 % Rotating planets on their axis
+for k = 2:length(t)
 % Rotation speed set relative to earth
 rotate(HMERC, [0,0,1], planets(3).RP/planets(1).RP);
 rotate(HVENS, [0,0,1], planets(3).RP/planets(2).RP);
@@ -383,7 +386,7 @@ else
     NeptuneDays = round(numdays/planets(8).RP,1);
     PlutoDays   = round(numdays/planets(9).RP,1);
     
-    %Display Days Values
+    % Display Days Values
     set(handles.MercuryDays, 'String', num2str(MercuryDays))
     set(handles.VenusDays, 'String', num2str(VenusDays))
     set(handles.EarthDays, 'String', num2str(EarthDays))
