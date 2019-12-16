@@ -66,12 +66,3 @@ planet(8).R_eqt = 24764; % km
 planet(8).R_pol = 24341; % km
 
 end
-% planet(1).OP = ;
-% planet(2).OP = ;
-% planet(3).OP = ;
-% planet(4).OP = ;
-% planet(5).OP = ;
-% planet(6).OP = ;
-% planet(7).OP = ;
-% planet(8).OP = ;
-% planet(9).OP = ;
