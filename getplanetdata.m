@@ -1,3 +1,13 @@
+% Get planetary data
+% Includes:
+% Planet structure with following fields:
+% Planet name (name)
+% Planet map image (map)
+% Planet rotation period (RP)
+% Planet orbit period (OP)
+% Polar radius (R_pol)
+% Equatorial radius (R_eqt)
+
 function planet = getplanetdata()
 
 planet = struct();
