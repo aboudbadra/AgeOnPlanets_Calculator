@@ -1,4 +1,4 @@
-# AgeOnPlanets_Calculator
+# Age-On-Planets_Calculator
 An age calculator for different planets. Input your birth date to display your age in years and days for each planet in our solar system. Also, includes a beautiful 3D animated rotating planets!
 
 
