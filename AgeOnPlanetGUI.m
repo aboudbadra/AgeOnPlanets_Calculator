@@ -1,3 +1,11 @@
+% Age Calculator GUI on different planets
+% Input: DD, MM, YYYY in Edit text boxes
+% Main functions:
+% AgeOnPlanetGUI_OpeningFcn: sets the GUI and draws the rotating planets
+% CalculateAge_Callback: calculates the age based on the given birth date and displays the results for each planet in days and years.
+% Created by: Aboud Albadra
+% https://github.com/aboudbadra
+
 function varargout = AgeOnPlanetGUI(varargin)
 % AGEONPLANETGUI MATLAB code for AgeOnPlanetGUI.fig
 %      AGEONPLANETGUI, by itself, creates a new AGEONPLANETGUI or raises the existing
